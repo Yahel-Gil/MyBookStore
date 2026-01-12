@@ -16,10 +16,13 @@
     <img src="images/book2.jpeg" />
     <img src="images/book3.avif" />
 
-    <br />
-    <label>Price:</label>
-    <input type="number" id="priceBox">
-    <button onclick="vat()">Show Vat</button>
+    <form>
+        <label>Enter a book price: </label>
+        <input type="number" step="0.01" id="priceBox" />
+        <button type="button" onclick="calculateVat()">Calculate VAT</button>
+        <span id="spanResult"></span>
+    </form>
+    
 
     <p>All Rights Reserved ⓒ </p>
     
